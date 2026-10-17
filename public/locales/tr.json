@@ -1,0 +1,20 @@
+{
+  "app.title": "ONE MORE SECOND",
+  "menu.start": "Başla",
+  "menu.instructions": "İki şerit arasında geçiş yaparak hayatta kal.",
+  "controls.keyboard": "Şerit değiştirmek için Boşluk veya Enter tuşuna bas.",
+  "controls.directional": "Şerit seçmek için Yukarı veya Aşağı tuşunu kullan.",
+  "controls.mouse": "Şerit değiştirmek için oyun alanına tıkla.",
+  "controls.touch": "Şerit değiştirmek için oyun alanına dokun.",
+  "controls.restart": "Yeniden oynamak için bir kontrole bas.",
+  "game.score": "Skor",
+  "game.bestScore": "En iyi",
+  "game.soundOn": "Ses açık",
+  "game.soundOff": "Ses kapalı",
+  "game.ruleChangeWarning": "Yukarı/Aşağı yakında tersine dönecek",
+  "game.ruleChangeActive": "Yukarı/Aşağı şerit seçimi tersine döndü",
+  "game.gameOver": "Oyun bitti",
+  "game.finalScore": "Son skor",
+  "game.playAgain": "Yeniden oyna",
+  "accessibility.reducedMotion": "Azaltılmış hareket etkin"
+}

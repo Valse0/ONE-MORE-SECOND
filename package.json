@@ -1,0 +1,17 @@
+{
+  "name": "one-more-second",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "node test/game-logic.test.js"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "vite": "6.4.4"
+  }
+}

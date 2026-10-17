@@ -1,0 +1,20 @@
+{
+  "app.title": "ONE MORE SECOND",
+  "menu.start": "Start",
+  "menu.instructions": "Survive by switching between the two lanes.",
+  "controls.keyboard": "Press Space or Enter to switch lanes.",
+  "controls.directional": "Use Up or Down to choose a lane.",
+  "controls.mouse": "Click the game area to switch lanes.",
+  "controls.touch": "Tap the game area to switch lanes.",
+  "controls.restart": "Press a control to play again.",
+  "game.score": "Score",
+  "game.bestScore": "Best",
+  "game.soundOn": "Sound on",
+  "game.soundOff": "Sound off",
+  "game.ruleChangeWarning": "Up/Down will reverse soon",
+  "game.ruleChangeActive": "Up/Down lane choices are reversed",
+  "game.gameOver": "Game over",
+  "game.finalScore": "Final score",
+  "game.playAgain": "Play again",
+  "accessibility.reducedMotion": "Reduced motion enabled"
+}
