@@ -1,7 +1,7 @@
 :root {
   color-scheme: dark;
   font-family: Arial, sans-serif;
-  background: #080b14;
+  background: #050812;
   touch-action: none;
   overscroll-behavior: none;
 }
@@ -18,7 +18,14 @@ html, body, #game-shell, #game {
 
 body { position: fixed; inset: 0; }
 
-#game-shell { display: grid; place-items: center; }
+#game-shell {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(ellipse at 50% 48%, rgba(18, 42, 76, 0.34), transparent 52%),
+    radial-gradient(ellipse at 18% 82%, rgba(68, 20, 95, 0.12), transparent 38%),
+    #050812;
+}
 
 #game { display: grid; place-items: center; }
 
@@ -29,4 +36,9 @@ canvas {
   touch-action: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  filter: drop-shadow(0 0 28px rgba(36, 153, 207, 0.08));
+}
+
+@media (max-width: 520px) {
+  canvas { filter: none; }
 }
