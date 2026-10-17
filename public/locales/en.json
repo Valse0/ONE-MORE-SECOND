@@ -8,6 +8,7 @@
   "controls.touch": "Tap the game area to switch lanes.",
   "controls.restart": "Press a control to play again.",
   "game.score": "Score",
+  "game.timeSurvived": "Time",
   "game.bestScore": "Best",
   "game.soundOn": "Sound on",
   "game.soundOff": "Sound off",

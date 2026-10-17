@@ -8,6 +8,7 @@
   "controls.touch": "Şerit değiştirmek için oyun alanına dokun.",
   "controls.restart": "Yeniden oynamak için bir kontrole bas.",
   "game.score": "Skor",
+  "game.timeSurvived": "Süre",
   "game.bestScore": "En iyi",
   "game.soundOn": "Ses açık",
   "game.soundOff": "Ses kapalı",

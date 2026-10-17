@@ -30,20 +30,32 @@ export default class ObstacleManager {
       }
       const { x, y } = this.scene.pointOnLane(item.angle, laneRadii[item.lane]);
       const pulse = reducedMotion ? 1 : 1 + Math.sin(elapsed / 100 + item.phase) * 0.08;
-      const size = 17 * pulse;
-      this.graphics.fillStyle(0xff4f7b, 0.18);
-      this.graphics.fillCircle(x, y, size + 8);
-      this.graphics.fillStyle(0xff5577, 1);
-      this.graphics.fillRoundedRect(x - size / 2, y - size / 2, size, size, 4);
-      this.graphics.lineStyle(2, 0xffb3c2, 0.95);
-      this.graphics.strokeRoundedRect(x - size / 2, y - size / 2, size, size, 4);
+      const size = 15 * pulse;
+      const danger = Math.max(0, 1 - distance / 0.65);
+      item.points[0].x = x; item.points[0].y = y - size;
+      item.points[1].x = x + size; item.points[1].y = y;
+      item.points[2].x = x; item.points[2].y = y + size;
+      item.points[3].x = x - size; item.points[3].y = y;
+      this.graphics.fillStyle(0xff3da8, 0.12 + danger * 0.12);
+      this.graphics.fillCircle(x, y, size + 10);
+      this.graphics.fillStyle(0xff3da8, 1);
+      this.graphics.fillPoints(item.points, true);
+      this.graphics.lineStyle(2, 0xffd1ed, 0.98);
+      this.graphics.strokePoints(item.points, true);
+      this.graphics.lineStyle(2, 0x741b69, 0.9);
+      this.graphics.lineBetween(x - size * 0.42, y, x + size * 0.42, y);
     }
   }
 
   spawn(elapsed, playerAngle, interval) {
     const lane = nextObstacleLane(this.lastLane);
     this.lastLane = lane;
-    this.items.push({ angle: playerAngle + 1.25, lane, phase: this.items.length * 2.1 });
+    this.items.push({
+      angle: playerAngle + 1.25,
+      lane,
+      phase: this.items.length * 2.1,
+      points: [{ x: 0, y: 0 }, { x: 0, y: 0 }, { x: 0, y: 0 }, { x: 0, y: 0 }],
+    });
     this.nextSpawn = elapsed + interval;
   }
 
